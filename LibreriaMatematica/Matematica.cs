@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LibreriaMatematica
 {
-    class Matematica
+    public class Matematica
     {
         public static int Somma(int n1, int n2)
         {
@@ -70,9 +70,7 @@ namespace LibreriaMatematica
 
         public static double Inverso(double n1)
         {
-            double inverso; 
-            inverso = n1 * -1;
-            return inverso;
+            return -n1;
         }
 
         public static bool IsPari(int n1)
@@ -91,16 +89,18 @@ namespace LibreriaMatematica
 
         public static bool IsDispari(int n1)
         {
+            
             bool ndispari;
-            if(n1 % 2 == 0)
-            {
-                ndispari = false;
-            }
-            else
+            if(n1 % 2 == 1)
             {
                 ndispari = true;
             }
+            else
+            {
+                ndispari = false;
+            }
             return ndispari;
+            
         }
 
         public static bool IsPositivo(int n1)

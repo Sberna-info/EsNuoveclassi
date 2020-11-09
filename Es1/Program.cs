@@ -11,8 +11,8 @@ namespace Es1
     {
         public static void Main(string[] args)
         {
-            int scelta = 0, scelta2 = 0;
-            Console.Write("Inserisci 1 se vuoi eseguire: la somma, la sottrazione, la moltiplicazione, la divisione o la potenza. \ninserisci 2 se vuoi eseguire: long Fatooriale, Minimo tra 3 numeri, Massimo tra 3 numeri, double Inverso. \nInserisci 3 se vuoi eseguire: Verifica se il numero è pari, Verifica se il numero è dispari, Verifica se il numero è positivo, Verifica se il numero è negativo, Verifica se il numero è intero \n \n");
+            int scelta, scelta2;
+            Console.Write("Inserisci 1 se vuoi eseguire: la somma, la sottrazione, la moltiplicazione, la divisione o la potenza. \ninserisci 2 se vuoi eseguire: long Fatooriale, Minimo tra 3 numeri, Massimo tra 3 numeri, double Inverso. \nInserisci 3 se vuoi eseguire: Verifica se il numero è pari, Verifica se il numero è dispari, Verifica se il numero è \n positivo, Verifica se il numero è negativo, Verifica se il numero è intero. \n");
             scelta = int.Parse(Console.ReadLine());
             if(scelta == 1)
             {
@@ -139,7 +139,6 @@ namespace Es1
             Console.Write("inserisci un numero: ");
             int n = int.Parse(Console.ReadLine());
             return n;
-
         }
 
     }
