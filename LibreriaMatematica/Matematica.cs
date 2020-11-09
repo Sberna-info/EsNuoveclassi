@@ -15,22 +15,26 @@ namespace LibreriaMatematica
 
         public static double DoubleSomma(double n1, double n2)
         {
-            return n1 + n2;
+            double somma = n1 + n2;
+            return somma;
         }
 
         public static double DoubleSottrazione(double n1, double n2)
         {
-            return n1 - n2;
+            double sottrazione = n1 - n2;
+            return sottrazione;
         }
 
         public static double DoubleMoltiplicazione(double n1, double n2)
         {
-            return n1 * n2;
+            double moltiplicazione = n1 * n2;
+            return moltiplicazione;
         }
 
         public static double DoubleDivisione(double n1, double n2)
         {
-            return n1 / n2;
+            double divisione = n1 / n2;
+            return divisione;
         }
 
         public static long LongPotenza(long n1, long n2)

@@ -27,29 +27,29 @@ namespace Es1
                 }
                 else if( scelta2 == 2)
                 {
-                    int n1 = LeggiNumero();
-                    int n2 = LeggiNumero();
+                    double n1 = LeggiNumeroDouble();
+                    double n2 = LeggiNumeroDouble();
                     double doublesomma = Matematica.DoubleSomma(n1, n2);
                     Console.WriteLine($"la somma double tra i due nuemri è: {doublesomma}");
                 }
                 else if( scelta2 == 3)
                 {
-                    int n1 = LeggiNumero();
-                    int n2 = LeggiNumero();
+                    double n1 = LeggiNumeroDouble();
+                    double n2 = LeggiNumeroDouble();
                     double doublesottrazione = Matematica.DoubleSottrazione(n1, n2);
                     Console.WriteLine($"la sottrazione double tra i due nuemri è: {doublesottrazione}");
                 }
                 else if(scelta2 == 4)
                 {
-                    int n1 = LeggiNumero();
-                    int n2 = LeggiNumero();
+                    double n1 = LeggiNumeroDouble();
+                    double n2 = LeggiNumeroDouble();
                     double doublemoltiplicazione = Matematica.DoubleMoltiplicazione(n1, n2);
                     Console.WriteLine($"la moltiplicazione double tra i due nuemri è: {doublemoltiplicazione}");
                 }
                 else if (scelta2 == 5)
                 {
-                    int n1 = LeggiNumero();
-                    int n2 = LeggiNumero();
+                    double n1 = LeggiNumeroDouble();
+                    double n2 = LeggiNumeroDouble();
                     double doubledivisione = Matematica.DoubleDivisione(n1, n2);
                     Console.WriteLine($"la divisione double tra i due nuemri è: {doubledivisione}");
 
@@ -138,6 +138,12 @@ namespace Es1
         {
             Console.Write("inserisci un numero: ");
             int n = int.Parse(Console.ReadLine());
+            return n;
+        }
+        static double LeggiNumeroDouble()
+        {
+            Console.Write("inserisci un numero: ");
+            double n = double.Parse(Console.ReadLine());
             return n;
         }
 
